@@ -44,7 +44,20 @@ Nas etapas anteriores, utilizamos recursos do Copilot que exigem uma orientaçã
    - Um ícone extra aparecerá ao lado dos nomes dos arquivos e das janelas do editor indicando edições sugeridas.
    - Um painel de edições sugeridas surgirá no canto inferior direito da janela do editor, oferecendo controles para navegar pelas alterações recomendadas.
 
-5. Antes de aceitar as mudanças, confira novamente o site e verifique se tudo foi atualizado corretamente. Aqui está um exemplo de um cartão de atividade atualizado. Você pode precisar reiniciar o aplicativo ou atualizar a página.
+5. Após ver o resultado inicial, vamos melhorar o layout da lista de participantes para torná-la mais organizada e visualmente atraente:
+
+   ```prompt
+   Preciso que melhore o layout da lista de participantes, adicionando:
+   - Uma seção dedicada com fundo claro e borda sutil
+   - Cabeçalho com título e contador de participantes (X/máximo)
+   - Lista organizada com ícones de usuário
+   - Melhor espaçamento e tipografia
+   - Estado vazio elegante quando não há participantes
+   ```
+
+   O Copilot sugerirá mudanças no estilo e estrutura HTML para criar uma apresentação mais profissional.
+
+6. Antes de aceitar as mudanças, confira novamente o site e verifique se tudo foi atualizado corretamente. Aqui está um exemplo de um cartão de atividade atualizado. Você pode precisar reiniciar o aplicativo ou atualizar a página.
 
    > **Nota:** Seu cartão de atividade pode estar diferente. O Copilot nem sempre produz resultados idênticos.
 
@@ -58,13 +71,13 @@ Nas etapas anteriores, utilizamos recursos do Copilot que exigem uma orientaçã
 
    </details>
 
-6. Agora que as mudanças estão confirmadas, use o painel para percorrer cada edição sugerida e clique em **Keep** para aplicá-las.
+7. Agora que as mudanças estão confirmadas, use o painel para percorrer cada edição sugerida e clique em **Keep** para aplicá-las.
 
    > **Dica:** Você pode aceitar as mudanças diretamente, modificá-las ou fornecer instruções adicionais usando a interface do chat.
 
-7. Com nosso novo recurso concluído, faça o **commit** e envie (**push**) as alterações para o GitHub.
+8. Com nosso novo recurso concluído, faça o **commit** e envie (**push**) as alterações para o GitHub.
 
-8. Aguarde um momento para Mona verificar seu trabalho, fornecer feedback e compartilhar a lição final. Está quase lá!
+9. Aguarde um momento para Mona verificar seu trabalho, fornecer feedback e compartilhar a lição final. Está quase lá!
 
 <details>
 <summary>Encontrando problemas? 🤷</summary><br/>
