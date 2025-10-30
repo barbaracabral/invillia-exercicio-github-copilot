@@ -53,6 +53,100 @@ Neste exercício, você irá:
 
 ---
 
+## Executando os Testes
+
+### Pré-requisitos
+- Node.js instalado (versão LTS recomendada)
+- npm (geralmente vem com Node.js)
+
+### Instalação
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/invillia-exercicio-github-copilot.git
+cd invillia-exercicio-github-copilot
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+### Executando os Testes
+Para executar a suíte de testes:
+```bash
+npm test
+```
+
+Os testes incluem:
+- Carregamento da lista de atividades
+- Preenchimento e envio do formulário de inscrição
+- Validação de mensagens de sucesso
+- Integração com a API
+
+### Estrutura dos Testes
+- `src/static/__tests__/app.test.js`: Testes do frontend
+- `jest.config.cjs`: Configuração do Jest
+- `jest.setup.js`: Setup do ambiente de testes
+
+### Adicionando Novos Testes
+
+1. Crie ou edite arquivos de teste na pasta `src/static/__tests__/`
+   - Use o padrão `*.test.js` para nomear arquivos
+   - Exemplo: `minhaFuncao.test.js`
+
+2. Estrutura básica de um teste:
+```javascript
+describe('Nome do componente/funcionalidade', () => {
+  beforeEach(() => {
+    // Configuração antes de cada teste
+    document.documentElement.innerHTML = fs.readFileSync('caminho/do/html', 'utf8');
+  });
+
+  test('descrição do comportamento esperado', async () => {
+    // Arrange (preparação)
+    const mockResponse = { /* seus dados mockados */ };
+    global.fetch = jest.fn().mockResolvedValue({
+      ok: true,
+      json: async () => mockResponse
+    });
+
+    // Act (ação)
+    document.dispatchEvent(new Event('DOMContentLoaded'));
+    
+    // Assert (verificação)
+    await waitFor(() => {
+      expect(elemento).toBeInTheDocument();
+    });
+  });
+});
+```
+
+3. Helpers Disponíveis
+   - `@testing-library/dom`: Para queries do DOM (`getByText`, `getByRole`, etc.)
+   - `@testing-library/jest-dom`: Para matchers específicos do DOM (`toBeInTheDocument`, `toHaveClass`, etc.)
+   - `jest`: Para mocks e asserções gerais
+
+4. Boas Práticas
+   - Mock chamadas externas (fetch, etc.)
+   - Um teste por comportamento
+   - Nomes descritivos para os testes
+   - Limpe o DOM após cada teste
+   - Use `async/await` para operações assíncronas
+
+5. Executando Testes Específicos
+```bash
+# Executar um arquivo específico
+npm test app.test.js
+
+# Executar testes que correspondam a um padrão
+npm test -- -t "nome do teste"
+
+# Modo watch (re-executa ao salvar)
+npm test -- --watch
+```
+
+---
+
 Obtenha ajuda: [Publique em nosso fórum de discussão](https://github.com/orgs/Copilot-Workshop-Invillia/discussions/categories/getting-started-with-github-copilot) &bull; [Confira a página de status do GitHub](https://www.githubstatus.com/)
 
 &copy; 2025 GitHub &bull; [Código de Conduta](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [Licença MIT](https://gh.io/mit)

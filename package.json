@@ -1,0 +1,14 @@
+{
+  "name": "invillia-exercicio-github-copilot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --color"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.20.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "jest": "^29.6.1",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
