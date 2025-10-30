@@ -1,3 +1,14 @@
+<img src="https://octodex.github.com/images/welcometocat.png" align="right" height="250px" />
+
+⭐️ Parabéns, barbaracabral! ⭐️
+
+Você concluiu este exercício! Ótimo trabalho! 🥳
+
+Se quiser praticar novamente, você pode repetir os passos abaixo. Basta clicar novamente no botão **Iniciar Exercício**.
+
+> [!TIP]
+> Dessa vez, a Mona não vai avaliar você! 😉
+
 # GitHub Copilot
 
 ![](https://github.com/barbaracabral/invillia-exercicio-github-copilot/actions/workflows/1-preparing.yml/badge.svg)
