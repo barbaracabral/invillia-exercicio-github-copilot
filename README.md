@@ -7,15 +7,12 @@
 
 ## Boas-vindas
 
-- **O que você aprenderá:** As diferentes formas de interação com o Copilot para explicar, escrever, depurar e desenvolver código.
-- **O que você construirá:** Você irá guiar o Copilot para atualizar o site de atividades extracurriculares da Escola Secundária Mergington.
 
-- **Pré-requisitos:**
   - Exercício básico: [Introdução ao GitHub](https://github.com/skills/introduction-to-github)
   - Familiaridade com o [VS Code](https://code.visualstudio.com/)
   - Noções básicas de programação
-- **Duração:** Este exercício leva menos de uma hora para ser concluído.
 
+# <img src="https://octodex.github.com/images/welcometocat.png" align="right" height="250px" />
 Neste exercício, você irá:
 
 1. Usar um Codespace pré-configurado para executar o VS Code no seu navegador.
